@@ -1,15 +1,13 @@
 import classes from "./Navbtn.module.css";
-import { useState } from "react";
 
 interface Prop {
   name: string;
   handleClick: Function;
   children: any;
+  active?: Boolean;
 }
 
-const Navbtn = ({ children, name, handleClick }: Prop) => {
-  const [active, setActive] = useState(false);
-
+const Navbtn = ({ children, name, handleClick, active }: Prop) => {
   let bntClasses = active
     ? `${classes.Navbtn} ${classes.Active}`
     : classes.Navbtn;
@@ -19,16 +17,6 @@ const Navbtn = ({ children, name, handleClick }: Prop) => {
       className={bntClasses}
       onClick={() => {
         handleClick(name);
-      }}
-      onMouseOver={() => {
-        setActive((active) => {
-          return !active;
-        });
-      }}
-      onMouseLeave={() => {
-        setActive((active) => {
-          return !active;
-        });
       }}
     >
       {children}
