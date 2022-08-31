@@ -26,16 +26,32 @@ function App() {
       <Banner />
       <section className="Main">
         <div className="nav2">
-          <Navbtn handleClick={handleClick} name={"event"}>
+          <Navbtn
+            handleClick={handleClick}
+            name={"event"}
+            active={section == "event"}
+          >
             Events
           </Navbtn>
-          <Navbtn handleClick={handleClick} name={"student"}>
+          <Navbtn
+            handleClick={handleClick}
+            name={"student"}
+            active={section == "student"}
+          >
             Student Coordinators
           </Navbtn>
-          <Navbtn handleClick={handleClick} name={"faculty"}>
+          <Navbtn
+            handleClick={handleClick}
+            name={"faculty"}
+            active={section == "faculty"}
+          >
             Faculty Coordinators
           </Navbtn>
-          <Navbtn handleClick={handleClick} name={"clubs"}>
+          <Navbtn
+            handleClick={handleClick}
+            name={"clubs"}
+            active={section == "clubs"}
+          >
             Clubs
           </Navbtn>
         </div>
