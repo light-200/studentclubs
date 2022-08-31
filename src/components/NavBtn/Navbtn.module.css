@@ -7,6 +7,7 @@
   width: 100%;
   padding: 0.5rem;
   cursor: pointer;
+  transition: 300ms all ease-in-out;
 }
 
 .Navbtn:hover {
@@ -15,6 +16,11 @@
 }
 
 .Active {
+  background-color: #000080;
+  color: white;
+}
+
+.Active:hover {
   background-color: #000080;
   color: white;
 }
