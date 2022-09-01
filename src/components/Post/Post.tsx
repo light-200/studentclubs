@@ -1,14 +1,12 @@
 import classes from "./Post.module.css";
+import Posts from "../../types/posts";
 
-interface Props {
-  title: string;
-  description: string;
-  image: string;
-}
-const Post = (props: Props) => {
+const Post = (props: Posts) => {
   return (
     <div className={classes.Post}>
-      <div className={classes.Image}>{props.image}</div>
+      <div className={classes.Image}>
+        <img src={props.image} />
+      </div>
       <div className={classes.Text}>
         <h1>{props.title}</h1>
         <p>{props.description}</p>
