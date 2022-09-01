@@ -1,0 +1,7 @@
+.Students {
+  width: 100%;
+  display: grid;
+  padding: 80px;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 450px);
+}

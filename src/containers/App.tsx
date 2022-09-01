@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Banner from "../components/Banner/Banner";
 import Navbtn from "../components/NavBtn/Navbtn";
-import Section from "../components/Section/Section";
+import Section from "../containers/Section/Section";
 import Logo from "../assets/logo.png";
 import "./App.css";
 
