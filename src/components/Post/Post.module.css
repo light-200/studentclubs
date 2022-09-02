@@ -2,7 +2,7 @@
   width: 700px;
   height: 300px;
 
-  background: #afafaf;
+  background: white;
 
   display: flex;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
@@ -14,6 +14,12 @@
   display: grid;
   place-content: center;
   background: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.Image img {
+  height: 100%;
 }
 
 .Text {
