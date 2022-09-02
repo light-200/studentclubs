@@ -16,6 +16,7 @@ const Events = ({ posts }: Props) => {
             description={post.description}
             title={post.title}
             image={post.image}
+            coverImages={post.coverImages}
             key={i}
           />
         );

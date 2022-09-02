@@ -5,7 +5,7 @@ const Post = (props: Posts) => {
   return (
     <div className={classes.Post}>
       <div className={classes.Image}>
-        <img src={props.image} />
+        <img src={props.coverImages[0].url} />
       </div>
       <div className={classes.Text}>
         <h1>{props.title}</h1>
