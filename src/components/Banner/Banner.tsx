@@ -9,7 +9,7 @@ const Banner = (props: Props) => {
     <div className={classes.Banner}>
       <div className={classes.Text}>
         <span className={classes.MainHeading}>Student</span>
-        <span className={classes.SecondHeading}>Activities committie</span>
+        <span className={classes.SecondHeading}>Activities Cell</span>
         <span className={classes.Description}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui ut
           sit blanditiis cum nihil placeat autem corrupti velit soluta hic earum

@@ -2,17 +2,19 @@ import { CSSProperties, useEffect } from "react";
 import { useState } from "react";
 
 const slides = [
-  { url: "https://source.unsplash.com/user/wsanter", title: "fhfh" },
-  { url: "https://source.unsplash.com/user/wsanter", title: "boat" },
-  { url: "https://source.unsplash.com/random", title: "forest" },
-  { url: "https://source.unsplash.com/user/wsanter", title: "city" },
-  { url: "https://source.unsplash.com/user/wsante", title: "italy" },
+  {
+    url: "https://media-exp1.licdn.com/dms/image/C4E22AQET7Xt-BMoawQ/feedshare-shrink_800/0/1650772864506?e=1665014400&v=beta&t=CjHxJLjBLI5FIhxDRV3hMFwyk1CyC32UjmGfpK3nhzw",
+    title: "vinci",
+  },
+  {
+    url: "http://main.gbpec.ac.in/images/vlcsnap-2022-08-08-18h31m11s838.png",
+    title: "audi",
+  },
 ];
 
 const slideStyles: CSSProperties = {
   width: "100%",
   height: "100%",
-  borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
@@ -58,6 +60,7 @@ const dotStyle: CSSProperties = {
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
