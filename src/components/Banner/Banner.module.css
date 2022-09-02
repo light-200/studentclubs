@@ -1,15 +1,32 @@
 .Banner {
-  height: 500px;
+  height: 75vh;
   display: flex;
 }
 
 .Text {
   flex: 1;
   display: flex;
-  font-size: 24px;
-  font-weight: bold;
+  padding: 9rem;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
+}
+
+.MainHeading {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.SecondHeading {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.Description {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 600px;
 }
 
 .Carousel {
@@ -19,7 +36,7 @@
   align-items: center;
 
   /* to be removed  */
-  background: black;
+  background: url("https://source.unsplash.com/random/?education");
   color: white;
   font-style: italic;
 }
