@@ -4,6 +4,7 @@ import Faculty from "../../components/Section/Faculty/Faculty";
 import Student from "../../components/Section/Students/Students";
 import classes from "./Section.module.css";
 import { useEffect, useState } from "react";
+import { request } from "graphql-request";
 
 interface Props {
   id: string;
@@ -14,6 +15,29 @@ const Section = (props: Props) => {
   const [posts, setPosts] = useState<Array<any>>([]);
   const [faculty, setFaculty] = useState<Array<any>>([]);
   const [students, setStudents] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { eventPosts } = await request(
+        "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
+        `
+      {
+        eventPosts {
+          title
+          slug
+          description
+        }
+      }
+    `
+      );
+
+      console.log(eventPosts);
+
+      setPosts(eventPosts);
+    };
+
+    fetchProducts();
+  }, []);
 
   useEffect(() => {
     setStudents(["Lorem", "sit amet", "inventore et"]);
@@ -28,14 +52,6 @@ const Section = (props: Props) => {
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, hic.",
       "Lorem ipsum dolor sit ametfuga quasi itaque qui voluptates.",
       "Lorem tem ut. Tempore nobis magnam quibusdam quaerat!",
-    ]);
-  }, []);
-
-  useEffect(() => {
-    setPosts([
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, hic.",
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odit neque porro autem illo vel fuga quasi itaque qui voluptates.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum omnis culpa natus quaerat, quo in esse nulla ad inventore et accusamus nemo, vitae autem ut. Tempore nobis magnam quibusdam quaerat!",
     ]);
   }, []);
 
