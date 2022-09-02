@@ -1,0 +1,25 @@
+.Banner {
+  height: 500px;
+  display: flex;
+}
+
+.Text {
+  flex: 1;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.Carousel {
+  flex: 1;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
+  /* to be removed  */
+  /* background: black;
+  color: white;
+  font-style: italic; */
+}

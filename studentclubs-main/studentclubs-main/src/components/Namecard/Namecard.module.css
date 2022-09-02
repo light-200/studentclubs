@@ -1,0 +1,24 @@
+.Card {
+  width: 450px;
+  height: 250px;
+
+  background: #afafaf;
+
+  display: flex;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+.Image {
+  width: 250px;
+  display: grid;
+  place-content: center;
+  background: white;
+}
+
+.Text {
+  flex: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
