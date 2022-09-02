@@ -1,7 +1,11 @@
+
+
+import { useEffect } from "react";
 import { useState } from "react";
 
+
 const slides = [
-    { url: "https://source.unsplash.com/random", title: "beach" },
+    { url: "https://source.unsplash.com/user/wsanter" ,title:"fhfh" },
     { url: "https://source.unsplash.com/user/wsanter", title: "boat" },
     { url: "https://source.unsplash.com/random", title: "forest" },
     { url: "https://source.unsplash.com/user/wsanter", title: "city" },
@@ -73,6 +77,31 @@ const Slider = () => {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
+  
+
+//   const slides = [
+//     { url: "https://source.unsplash.com/user/wsanter" ,title:"fhfh" },
+//     { url: "https://source.unsplash.com/user/wsanter", title: "boat" },
+//     { url: "https://source.unsplash.com/random", title: "forest" },
+//     { url: "https://source.unsplash.com/user/wsanter", title: "city" },
+//     { url: "https://source.unsplash.com/user/wsante", title: "italy" },
+//   ];
+//   const [x, setX] = useState(0);
+//   useEffect(() => {
+//     setX === 0 ? -100 * slides.lenght-- : slides.lenght++;
+//     setTimeout(x, 2000);
+//   });
+//   const goLeft = () => {
+//     x === 0 ? setX(-100 * (slides.length - 1)) : setX(x + 100);
+//     console.log(x);
+//   };
+//   const goRight = () => {
+//     x === -100 * (slides.length - 1) ? setX(0) : setX(x - 100);
+//     console.log(x);
+//   };
+
+
+  
 
   return (
     <div style={sliderStyles}>
@@ -101,3 +130,4 @@ const Slider = () => {
 };
 
 export default Slider;
+

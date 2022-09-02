@@ -1,5 +1,5 @@
 .Banner {
-  height: 500px;
+  height: 544px;
   display: flex;
 }
 
@@ -17,6 +17,9 @@
   /* display: flex; */
   justify-content: center;
   align-items: center;
+  width: 100px;
+  height: 500px;
+
 
   /* to be removed  */
   /* background: black;
