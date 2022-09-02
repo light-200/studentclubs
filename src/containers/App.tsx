@@ -4,6 +4,7 @@ import Navbtn from "../components/NavBtn/Navbtn";
 import Section from "../containers/Section/Section";
 import Logo from "../assets/logo.png";
 import "./App.css";
+import Footer from "../components/Footer/Footer";
 
 function App() {
   const [section, setSection] = useState("event");
@@ -57,7 +58,7 @@ function App() {
         </div>
         <Section id={section} />
       </section>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 }
