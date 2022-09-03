@@ -13,10 +13,10 @@ function App() {
   };
 
   return (
-    <div className="App"> 
+    <div className="App">
       <div className="nav">
         <div className="logo">
-          <img  src={Logo} />
+          <img src={Logo} />
         </div>
         <div className="title">
           Govind Ballabh Pant Institue Of Engineering And Technology

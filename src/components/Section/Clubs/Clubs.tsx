@@ -16,4 +16,3 @@ const Clubs = ({ clubs }: Props) => {
 };
 
 export default Clubs;
- 

@@ -4,6 +4,7 @@ import Faculty from "../../components/Section/Faculty/Faculty";
 import Student from "../../components/Section/Students/Students";
 import classes from "./Section.module.css";
 import { useEffect, useState } from "react";
+import Post from "../../types/posts";
 
 interface Props {
   id: string;
@@ -11,7 +12,7 @@ interface Props {
 
 const Section = (props: Props) => {
   const [clubs, setClubs] = useState<Array<any>>([]);
-  const [posts, setPosts] = useState<Array<any>>([]);
+  const [posts, setPosts] = useState<Array<Post>>([]);
   const [faculty, setFaculty] = useState<Array<any>>([]);
   const [students, setStudents] = useState<Array<any>>([]);
 
@@ -28,16 +29,29 @@ const Section = (props: Props) => {
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, hic.",
       "Lorem ipsum dolor sit ametfuga quasi itaque qui voluptates.",
       "Lorem tem ut. Tempore nobis magnam quibusdam quaerat!",
-      "Lorem tem ut. Tempore nobis magnam quibusdam quaerat!",
     ]);
   }, []);
 
   useEffect(() => {
     setPosts([
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, hic.",
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odit neque porro autem illo vel fuga quasi itaque qui voluptates.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum omnis culpa natus quaerat, quo in esse nulla ad inventore et accusamus nemo, vitae autem ut. Tempore nobis magnam quibusdam quaerat!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum omnis culpa natus quaerat, quo in esse nulla ad inventore et accusamus nemo, vitae autem ut. Tempore nobis magnam quibusdam quaerat!",
+      {
+        title: "Independence day celebration",
+        description:
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magnam expedita architecto tempora qui corrupti velit. Dolore natus autem quos, ab modi distinctio quae ad laudantium nulla excepturi accusantium! Aspernatur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, ab.",
+        image: "https://source.unsplash.com/random/400x400/?india",
+      },
+      {
+        title: "Annual day celebration",
+        description:
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magnam expedita architecto tempora qui corrupti velit. Dolore natus autem quos, ab modi distinctio quae ad laudantium nulla excepturi accusantium! Aspernatur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, ab.",
+        image: "https://source.unsplash.com/random/400x400/?college",
+      },
+      {
+        title: "Teachers day celebration",
+        description:
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magnam expedita architecto tempora qui corrupti velit. Dolore natus autem quos, ab modi distinctio quae ad laudantium nulla excepturi accusantium! Aspernatur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, ab.",
+        image: "https://source.unsplash.com/random/400x400/?teachers",
+      },
     ]);
   }, []);
 

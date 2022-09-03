@@ -32,12 +32,8 @@
   justify-content: center; */
   /* margin-left: -30px; */
   margin-top: 20px;
-  
-  
-  
 }
 .input_area {
-  
   border-radius: 100px;
   padding: 10px;
   border: 2px solid gray;
@@ -71,7 +67,6 @@
 .About {
   flex: 4;
   /* width: 33%; */
-  
 }
 .About_bel {
   margin-top: 10px;
@@ -150,7 +145,7 @@ li {
     width: fit-content;
     margin-right: 40px;
   }
-  .Newsletter{
+  .Newsletter {
     margin-right: 40px;
   }
 }

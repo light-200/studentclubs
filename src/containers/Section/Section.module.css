@@ -6,8 +6,7 @@
   background: #d9d9d9;
 }
 @media screen and (max-width: 768px) {
-  .Section{
+  .Section {
     width: 100%;
-    
   }
 }

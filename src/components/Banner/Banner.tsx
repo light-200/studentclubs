@@ -21,7 +21,7 @@ const Banner = (props: Props) => {
         </div>
       </div>
       <div className={classes.Carousel}>carousel</div>
-    </div> 
+    </div>
   );
 };
 

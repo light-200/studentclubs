@@ -36,13 +36,12 @@
 }
 
 @media screen and (max-width: 780px) {
-  .Post{
+  .Post {
     width: 90%;
     flex-direction: column;
   }
   .Image {
     width: 100%;
     height: 500px;
-    
   }
 }
