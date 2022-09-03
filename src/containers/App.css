@@ -1,0 +1,92 @@
+.App {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.nav {
+  height: fit-content;
+  /* display: flex;
+  flex-direction: column; */
+  color: #000080;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  size: 80px;
+}
+
+.logo img {
+  height: 100%;
+  filter: brightness(0.5);
+  width: 200px;
+}
+
+.title {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.socials {
+  flex: 2;
+  display: flex;
+}
+
+.Main {
+  margin-top: 30px;
+  padding: 0 150px;
+  position: relative;
+  z-index: 0;
+}
+
+.Main::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), transparent);
+  /* margin-top: -30px; */
+}
+
+.nav2 {
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 800;
+  background: #d9d9d9;
+}
+
+@media screen and (min-width: 1080px) {
+  .nav {
+    display: flex;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .nav2 {
+    width: fit-content;
+  }
+
+  .Main {
+    padding: 0px;
+  }
+}
