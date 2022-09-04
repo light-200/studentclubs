@@ -18,7 +18,7 @@ const Section = (props: Props) => {
   const [students, setStudents] = useState<Array<any>>([]);
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchPosts = async () => {
       const { eventPosts } = await request(
         "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
         `
@@ -39,23 +39,78 @@ const Section = (props: Props) => {
       setPosts(eventPosts);
     };
 
-    fetchProducts();
+    fetchPosts();
   }, []);
 
   useEffect(() => {
-    setStudents(["Lorem", "sit amet", "inventore et"]);
+    const fetchStudentData = async () => {
+      const { studentsData } = await request(
+        "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
+        `
+        {
+          studentsData{
+            name
+            title
+            session
+          }
+        }
+
+    `
+      );
+
+      console.log(studentsData);
+
+      setStudents(studentsData);
+    };
+
+    fetchStudentData();
   }, []);
 
   useEffect(() => {
-    setFaculty(["Lorem", "sit amet", "inventore et"]);
+    const fetchFacultyData = async () => {
+      const { facultiesData } = await request(
+        "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
+        `
+        {
+          facultiesData{
+            name
+            sacPosition
+            collegePosition
+          }
+        }
+
+    `
+      );
+
+      console.log(facultiesData);
+
+      setFaculty(facultiesData);
+
+      fetchFacultyData();
+    };
   }, []);
 
   useEffect(() => {
-    setClubs([
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, hic.",
-      "Lorem ipsum dolor sit ametfuga quasi itaque qui voluptates.",
-      "Lorem tem ut. Tempore nobis magnam quibusdam quaerat!",
-    ]);
+    const fetchClubsData = async () => {
+      const { clubsData } = await request(
+        "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
+        `
+        {
+          clubsData{
+            clubName
+            clubAim
+          }
+        }
+
+    `
+      );
+
+      console.log(clubsData);
+
+      setFaculty(clubsData);
+
+      fetchClubsData();
+    };
   }, []);
 
   let Section;

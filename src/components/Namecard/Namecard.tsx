@@ -5,7 +5,7 @@ interface Props {
   name: string;
   batch: string;
   branch: string;
-  image: string;
+  image: "https://xsgames.co/randomusers/assets/avatars/pixel/10.jpg";
 }
 const Namecard = (props: Props) => {
   return (

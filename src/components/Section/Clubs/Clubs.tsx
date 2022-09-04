@@ -9,7 +9,15 @@ const Clubs = ({ clubs }: Props) => {
   return (
     <div className={classes.Events}>
       {clubs.map((c: any, i) => {
-        return <Post key={c + i} description={c} image={c} title={c} />;
+        return (
+          <Post
+            key={c + i}
+            description={c}
+            image={c}
+            coverImages={c}
+            title={c}
+          />
+        );
       })}
     </div>
   );
