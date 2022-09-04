@@ -5,3 +5,12 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, 450px);
 }
+
+@media screen and (max-width: 768px) {
+  .Students {
+    width: 90%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+}

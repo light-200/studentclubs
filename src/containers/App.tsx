@@ -19,8 +19,8 @@ function App() {
           <img src={Logo} />
         </div>
         <div className="title">
-          Govind Ballabh Pant Institue of engineering and technology
-          <p>An autonomous institue of Government of Uttarakhand</p>
+          Govind Ballabh Pant Institue Of Engineering And Technology
+          <p>An Autonomous Institue Of Government Of Uttarakhand</p>
         </div>
         <div className="socials"></div>
       </div>

@@ -5,21 +5,27 @@ const Footer = () => {
       <div className={classes.Section1}>
         <div className={classes.Vision}>
           <h3>OUR VISION</h3>
-          <p>
+          <p className={classes.Vision2}>
             To pivot for the excellence in technical education and producing
             globally competent professionals by building the strong
             teaching-learning and research environment.
           </p>
         </div>
         <form className={classes.Newsletter}>
-          <input type="text" placeholder="Email Address" />
-          <button type="submit">{">"}</button>
+          <input
+            className={classes.input_area}
+            type="text"
+            placeholder="Email Address"
+          />
+          <button className={classes.input_btn} type="submit">
+            {">"}
+          </button>
         </form>
       </div>
       <div className={classes.Section2}>
         <div className={classes.About}>
           <h3>ABOUT US</h3>
-          <p>
+          <p className={classes.About_bel}>
             Govind Ballabh Pant Institute of Engineering &amp; Technology is an
             Institute with total commitment to quality and excellence in
             academic pursuits. The Institute was established in 1989, as an
@@ -31,22 +37,34 @@ const Footer = () => {
           <h3>Quick LInks</h3>
           <ul className={classes.FooterLinks}>
             <li>
-              <a href="#">HOME</a>
+              <a className={classes.links} href="#">
+                HOME
+              </a>
             </li>
             <li>
-              <a href="#">ACADEMICS</a>
+              <a className={classes.links} href="#">
+                ACADEMICS
+              </a>
             </li>
             <li>
-              <a href="#">DEPARTMENTS</a>
+              <a className={classes.links} href="#">
+                DEPARTMENTS
+              </a>
             </li>
             <li>
-              <a href="#">CONTACT US</a>
+              <a className={classes.links} href="#">
+                CONTACT US
+              </a>
             </li>
             <li>
-              <a href="#">ADMINSTRATION</a>
+              <a className={classes.links} href="#">
+                ADMINSTRATION
+              </a>
             </li>
             <li>
-              <a href="#">FACILITIES</a>
+              <a className={classes.links} href="#">
+                FACILITIES
+              </a>
             </li>
           </ul>
         </div>
@@ -54,27 +72,39 @@ const Footer = () => {
           <h3>OUR SERVICES</h3>
           <ul className={classes.ServicesLinks}>
             <li>
-              <a href="#">Fresher Jobs</a>
+              <a className={classes.links} href="#">
+                Fresher Jobs
+              </a>
             </li>
             <li>
-              <a href="#">InternEdge - Internships &amp; Projects </a>
+              <a className={classes.links} href="#">
+                InternEdge - Internships &amp; Projects{" "}
+              </a>
             </li>
             <li>
-              <a href="#">Resume Edge - Resume Writing Services</a>
+              <a className={classes.links} href="#">
+                Resume Edge - Resume Writing Services
+              </a>
             </li>
             <li>
-              <a href="#">Readers Galleria - Curated Library</a>
+              <a className={classes.links} href="#">
+                Readers Galleria - Curated Library
+              </a>
             </li>
             <li>
-              <a href="#">Trideus - Campus Ambassadors</a>
+              <a className={classes.links} href="#">
+                Trideus - Campus Ambassadors
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className={classes.Section3}>
-        Copyright © Govind Ballabh Pant Institute of Engineering &amp;
-        Technology, Pauri Garhwal
-      </div>
+      <section className={classes.copy_right}>
+        <div className={classes.Section3}>
+          Copyright © Govind Ballabh Pant Institute of Engineering &amp;
+          Technology, Pauri Garhwal
+        </div>
+      </section>
     </div>
   );
 };

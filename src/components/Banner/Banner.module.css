@@ -1,13 +1,19 @@
 .Banner {
-  height: 75vh;
+  height: 70vh;
+  display: flex;
+  margin-top: 25px;
+  /* flex-direction: column; */
+}
+.newBanner {
   display: flex;
 }
 
 .Text {
   flex: 1;
   display: flex;
-  padding: 9rem;
-  max-width: 50%;
+  /* padding: 9rem; */
+  padding: 100px;
+  max-width: 90%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -37,6 +43,45 @@
 
   /* to be removed  */
   background: url("https://source.unsplash.com/random/?education");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   color: white;
   font-style: italic;
+}
+
+/* this is the media screen */
+@media screen and (max-width: 1080px) {
+  .Banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+  }
+  .Carousel {
+    margin-top: 50px;
+    height: 500px;
+    width: 90%;
+  }
+  .Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .ab_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainHeading {
+    font-size: 78px;
+  }
 }

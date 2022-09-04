@@ -4,36 +4,82 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
+  font-size: large;
 }
 
+/* css for section 1 */
 .Section1 {
   display: flex;
-  width: 70vw;
+  flex-direction: column;
+  width: 90%;
   padding: 40px;
+  /* align-items: center; */
 }
 
 .Vision {
   flex: 4;
 }
-.Newsletter {
-  flex: 3;
-  display: grid;
-  place-items: center;
+
+.Vision2 {
+  margin-top: 12px;
 }
 
+.Newsletter {
+  /* flex: 3;
+  display: grid;
+  place-items: center; */
+  /* display: flex;
+  justify-content: center; */
+  /* margin-left: -30px; */
+  margin-top: 20px;
+}
+.input_area {
+  border-radius: 100px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+.input_area:hover {
+  border: 2px solid black;
+}
+.input_btn {
+  border-radius: 50px;
+  width: 50px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+.input_btn:hover {
+  border: 2px solid black;
+  color: black;
+}
+/* section 1 end */
 .Section2 {
   display: flex;
-  width: 70vw;
-  padding: 40px;
-  gap: 2rem;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  gap: 25px;
+  margin-top: 0px;
 }
 
 .About {
   flex: 4;
+  /* width: 33%; */
+}
+.About_bel {
+  margin-top: 10px;
 }
 
 .Quicklinks {
   flex: 2;
+}
+li {
+  margin-top: 10px;
+}
+.links:hover {
+  color: rgb(143, 138, 138);
 }
 
 .FooterLinks {
@@ -48,6 +94,7 @@
 
 .Services {
   flex: 2;
+  width: fit-content;
 }
 
 .ServicesLinks {
@@ -62,7 +109,43 @@
 
 .Section3 {
   display: flex;
-  justify-content: center;
-  width: 70vw;
+  flex-direction: column;
+  width: 90%;
   padding: 40px;
+  margin-left: 30px;
+}
+
+/* media quiry for the footer */
+
+@media screen and (min-width: 768px) {
+  .Section1 {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    padding: 40px;
+  }
+  .Section2 {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    padding: 40px;
+    gap: 2rem;
+  }
+
+  .Section3 {
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    padding: 40px;
+  }
+  .Vision2 {
+    width: 75%;
+  }
+  .About_bel {
+    width: fit-content;
+    margin-right: 40px;
+  }
+  .Newsletter {
+    margin-right: 40px;
+  }
 }
