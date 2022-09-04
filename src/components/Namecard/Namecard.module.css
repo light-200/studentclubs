@@ -9,10 +9,12 @@
 }
 
 .Image {
+  flex: 3;
   width: 100%;
   display: grid;
   place-content: center;
   background: white;
+  overflow: hidden;
 }
 
 .Text {

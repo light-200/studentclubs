@@ -11,12 +11,12 @@ const Student = ({ students }: Props) => {
       {students.map((s: any, i) => {
         return (
           <Namecard
-            title={s}
-            key={s + i}
-            batch={(Math.random() * 10).toPrecision(2).toString()}
-            branch={s.slice("a")[0]}
-            image={s}
-            name={s + s}
+            title={s.title}
+            key={s.name + i}
+            branch={s.branch}
+            batch={s.session}
+            image={s.profileImage}
+            name={s.name}
           />
         );
       })}
