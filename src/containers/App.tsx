@@ -36,10 +36,10 @@ function App() {
           </Navbtn>
           <Navbtn
             handleClick={handleClick}
-            name={"student"}
-            active={section == "student"}
+            name={"clubs"}
+            active={section == "clubs"}
           >
-            Student Coordinators
+            Clubs
           </Navbtn>
           <Navbtn
             handleClick={handleClick}
@@ -50,10 +50,10 @@ function App() {
           </Navbtn>
           <Navbtn
             handleClick={handleClick}
-            name={"clubs"}
-            active={section == "clubs"}
+            name={"student"}
+            active={section == "student"}
           >
-            Clubs
+            Student Coordinators
           </Navbtn>
         </div>
         <Section id={section} />
