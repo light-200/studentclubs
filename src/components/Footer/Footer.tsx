@@ -35,36 +35,16 @@ const Footer = () => {
           </p>
         </div>
         <div className={classes.Quicklinks}>
-          <h3>Quick LInks</h3>
+          <h3>Quick Links</h3>
           <ul className={classes.FooterLinks}>
             <li>
-              <a className={classes.links} href="#">
+              <a className={classes.links} href="/">
                 HOME
               </a>
             </li>
             <li>
-              <a className={classes.links} href="#">
-                ACADEMICS
-              </a>
-            </li>
-            <li>
-              <a className={classes.links} href="#">
-                DEPARTMENTS
-              </a>
-            </li>
-            <li>
-              <a className={classes.links} href="#">
+              <a className={classes.links} href="http://www.gbpec.ac.in/aboutus/contact.php" target={"_blank"}>
                 CONTACT US
-              </a>
-            </li>
-            <li>
-              <a className={classes.links} href="#">
-                ADMINSTRATION
-              </a>
-            </li>
-            <li>
-              <a className={classes.links} href="#">
-                FACILITIES
               </a>
             </li>
           </ul>
