@@ -6,9 +6,10 @@ const Footer = () => {
         <div className={classes.Vision}>
           <h3>OUR VISION</h3>
           <p className={classes.Vision2}>
-            To pivot for the excellence in technical education and producing
-            globally competent professionals by building the strong
-            teaching-learning and research environment.
+            Fostering the engagement of students in co-curricular and
+            extracurricular activities, and to inculcate in them the urge to
+            analyse, explore, build and project innovation as a community
+            comprising members from varied backgrounds
           </p>
         </div>
         <form className={classes.Newsletter}>

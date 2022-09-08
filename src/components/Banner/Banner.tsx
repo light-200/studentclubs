@@ -11,10 +11,10 @@ const Banner = (props: Props) => {
         <span className={classes.MainHeading}>Student</span>
         <span className={classes.SecondHeading}>Activities Cell</span>
         <span className={classes.Description}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui ut
-          sit blanditiis cum nihil placeat autem corrupti velit soluta hic earum
-          ratione dolor excepturi, dignissimos mollitia ab, accusantium nobis
-          facilis quam non sunt. Quae nam blanditiis eveniet ratione iure.
+          Fostering the engagement of students in co-curricular and
+          extracurricular activities, and to inculcate in them the urge to
+          analyse, explore, build and project innovation as a community
+          comprising members from varied backgrounds
         </span>
       </div>
       <div className={classes.Carousel}>

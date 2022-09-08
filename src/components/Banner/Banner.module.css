@@ -1,17 +1,13 @@
 .Banner {
   height: 70vh;
   display: flex;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   /* flex-direction: column; */
-}
-.newBanner {
-  display: flex;
 }
 
 .Text {
   flex: 1;
   display: flex;
-  /* padding: 9rem; */
   padding: 100px;
   max-width: 90%;
   flex-direction: column;

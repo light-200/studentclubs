@@ -1,16 +1,12 @@
 .Post {
-  width: 100%;
-  height: 300px;
-
-  background: #afafaf;
+  height: 200px;
 
   display: flex;
-  /* flex-direction: column; */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
 .Image {
-  width: 300px;
+  max-width: 300px;
   flex: 4;
   display: grid;
   place-content: center;
@@ -18,12 +14,17 @@
   overflow: hidden;
 }
 
+.Image img {
+  height: 250px;
+}
+
 .Text {
   flex: 5;
   padding: 1rem;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 5px;
 }
 
 .Text p {
@@ -31,7 +32,6 @@
 }
 
 .btn {
-  margin-top: 1rem;
   display: inline-block;
   font-style: italic;
 }
@@ -39,10 +39,5 @@
 @media screen and (max-width: 780px) {
   .Post {
     width: 90%;
-    flex-direction: column;
-  }
-  .Image {
-    width: 100%;
-    height: 500px;
   }
 }

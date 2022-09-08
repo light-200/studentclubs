@@ -11,8 +11,8 @@
 }
 
 .Navbtn:hover {
-  background: rgb(94, 94, 94);
-  color: white;
+  background: #d9d9ff;
+  color: black;
 }
 
 .Active {
