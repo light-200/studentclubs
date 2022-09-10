@@ -9,6 +9,7 @@ interface Props {
 
 const Events = ({ posts }: Props) => {
   return (
+
     <div className="flex justify-center">
       <div className="grid  grid-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
         {posts.map((post: Posts, i) => {
@@ -18,11 +19,13 @@ const Events = ({ posts }: Props) => {
               title={post.title}
               image={post.image}
               coverImages={post.coverImages}
+                 slug={post.slug}
               key={i}
             />
           );
         })}
       </div>
+
     </div>
   );
 };
