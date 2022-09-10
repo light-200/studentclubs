@@ -26,6 +26,7 @@ const Section = (props: Props) => {
         eventPosts {
           title
           description
+          slug
           coverImages{
             url
           }
