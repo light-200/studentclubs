@@ -2,7 +2,7 @@ import Clubs from "../../components/Section/Clubs/Clubs";
 import Events from "../../components/Section/Events/Events";
 import Faculty from "../../components/Section/Faculty/Faculty";
 import Student from "../../components/Section/Students/Students";
-import classes from "./Section.module.css";
+// import classes from "./Section.module.css";
 import { useEffect, useState } from "react";
 import Post from "../../types/posts";
 import { request } from "graphql-request";
@@ -53,9 +53,14 @@ const Section = (props: Props) => {
             name
             title
             session
+            branch
+            linkedin
+            profileImage{
+              url
+            }
           }
         }
-
+ 
     `
       );
 
@@ -74,6 +79,9 @@ const Section = (props: Props) => {
         `
         {
           facultiesData{
+            profileImage{
+              url
+            }
             name
             sacPosition
             collegePosition
@@ -134,7 +142,7 @@ const Section = (props: Props) => {
       break;
   }
 
-  return <div className={classes.Section}>{Section}</div>;
+  return <div className="">{Section}</div>;
 };
 
 export default Section;

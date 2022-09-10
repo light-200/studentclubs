@@ -8,19 +8,24 @@
   padding: 0.5rem;
   cursor: pointer;
   transition: 300ms all ease-in-out;
+  border: 1px solid #eceff1;
+  /* border-radius: 5px; */
+  border-width: 0 1px ;
 }
 
 .Navbtn:hover {
-  background: #d9d9ff;
+  background: #e0f7fa;
   color: black;
+  /* border-radius: 10px; */
 }
 
 .Active {
-  background-color: #000080;
+  background-color: #00b8d4;
+  /* border-radius: 10px; */
   color: white;
 }
 
 .Active:hover {
-  background-color: #000080;
+  background-color: #00b8d4;
   color: white;
 }
