@@ -1,5 +1,6 @@
 import classes from "./Post.module.css";
 import Posts from "../../types/posts";
+import { Link } from "react-router-dom";
 
 const Post = (props: Posts) => {
   return (
@@ -10,7 +11,9 @@ const Post = (props: Posts) => {
       <div className={classes.Text}>
         <h1>{props.title}</h1>
         <p>{props.description}</p>
-        <div className={classes.btn}>Read more...</div>
+        <Link to={`Event/${props.slug}`} className={classes.btn}>
+          Read more...
+        </Link>
       </div>
     </div>
   );
