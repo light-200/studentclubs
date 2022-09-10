@@ -1,33 +1,33 @@
-import classes from "./Footer.module.css";
+// import classes from "./Footer.module.css";
 const Footer = () => {
   return (
-    <div>
-      <div className={classes.Footer}>
-        <div className={classes.Section1}>
-          <div className={classes.Vision}>
-            <h3>OUR VISION</h3>
-            <p className={classes.Vision2}>
+    <div style={{"backgroundColor":"#162839"}} className=" flex flex-col justify-center items-center text-white mt-12  ">
+      <div className="w-11/12 p-12 flex justify-center flex-col xl:flex-row md:w-8/12 ">
+        
+          <div className="flex flex-col p-4">
+            <h3 className="text-2xl mb-4 text-cyan-300 ">OUR VISION</h3>
+            <p className="">
               Fostering the engagement of students in co-curricular and
               extracurricular activities, and to inculcate in them the urge to
               analyse, explore, build and project innovation as a community
               comprising members from varied backgrounds
             </p>
           </div>
-          <form className={classes.Newsletter}>
+          {/* <form className="">
             <input
-              className={classes.input_area}
+              className=""
               type="text"
               placeholder="Email Address"
             />
-            <button className={classes.input_btn} type="submit">
+            <button className="" type="submit">
               {">"}
             </button>
-          </form>
-        </div>
-        <div className={classes.Section2}>
-          <div className={classes.About}>
-            <h3>ABOUT US</h3>
-            <p className={classes.About_bel}>
+          </form> */}
+      
+        <div className="flex justify-center flex-col md:flex-row ">
+          <div className="p-4">
+            <h3 className="text-2xl mb-3 text-cyan-300">ABOUT US</h3>
+            <p className="">
               Govind Ballabh Pant Institute of Engineering &amp; Technology is
               an Institute with total commitment to quality and excellence in
               academic pursuits. The Institute was established in 1989, as an
@@ -35,17 +35,17 @@ const Footer = () => {
               well-trained professionals.
             </p>
           </div>
-          <div className={classes.Quicklinks}>
-            <h3>Quick Links</h3>
-            <ul className={classes.FooterLinks}>
+          <div className="p-4">
+            <h3 className="text-2xl mb-3 w-48 text-cyan-300">Quick Links</h3>
+            <ul className="">
               <li>
-                <a className={classes.links} href="/">
+                <a className="" href="/">
                   HOME
                 </a>
               </li>
               <li>
                 <a
-                  className={classes.links}
+                  className=""
                   href="http://www.gbpec.ac.in/aboutus/contact.php"
                   target={"_blank"}
                 >
@@ -54,40 +54,12 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className={classes.Services}>
-            <h3>OUR SERVICES</h3>
-            <ul className={classes.ServicesLinks}>
-              <li>
-                <a className={classes.links} href="#">
-                  Fresher Jobs
-                </a>
-              </li>
-              <li>
-                <a className={classes.links} href="#">
-                  InternEdge - Internships &amp; Projects{" "}
-                </a>
-              </li>
-              <li>
-                <a className={classes.links} href="#">
-                  Resume Edge - Resume Writing Services
-                </a>
-              </li>
-              <li>
-                <a className={classes.links} href="#">
-                  Readers Galleria - Curated Library
-                </a>
-              </li>
-              <li>
-                <a className={classes.links} href="#">
-                  Trideus - Campus Ambassadors
-                </a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
-      <section className={classes.copy_right}>
-        <div className={classes.Section3}>
+      <hr className="border-1 border-gray-400 w-full" />
+      <section className="flex justify-center p-6  items-center w-full">
+        <div className="text-white text-center">
           Copyright © Govind Ballabh Pant Institute of Engineering &amp;
           Technology, Pauri Garhwal
         </div>

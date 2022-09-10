@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Post from "../../Post/Post";
-import classes from "./Events.module.css";
+// import classes from "./Events.module.css";
+import Post from "../../Post/Post"; 
 import Posts from "../../../types/posts";
 
 interface Props {
@@ -9,18 +9,20 @@ interface Props {
 
 const Events = ({ posts }: Props) => {
   return (
-    <div className={classes.Events}>
-      {posts.map((post: Posts, i) => {
-        return (
-          <Post
-            description={post.description}
-            title={post.title}
-            image={post.image}
-            coverImages={post.coverImages}
-            key={i}
-          />
-        );
-      })}
+    <div className="flex justify-center">
+      <div className="grid  grid-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        {posts.map((post: Posts, i) => {
+          return (
+            <Post
+              description={post.description}
+              title={post.title}
+              image={post.image}
+              coverImages={post.coverImages}
+              key={i}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
