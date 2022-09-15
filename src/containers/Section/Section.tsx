@@ -2,7 +2,6 @@ import Clubs from "../../components/Section/Clubs/Clubs";
 import Events from "../../components/Section/Events/Events";
 import Faculty from "../../components/Section/Faculty/Faculty";
 import Student from "../../components/Section/Students/Students";
-// import classes from "./Section.module.css";
 import { useEffect, useState } from "react";
 import Post from "../../types/posts";
 import { request } from "graphql-request";
@@ -17,6 +16,7 @@ const Section = (props: Props) => {
   const [faculty, setFaculty] = useState<Array<any>>([]);
   const [students, setStudents] = useState<Array<any>>([]);
 
+  // to fetch posts
   useEffect(() => {
     const fetchPosts = async () => {
       const { eventPosts } = await request(
@@ -35,14 +35,14 @@ const Section = (props: Props) => {
     `
       );
 
-      console.log(eventPosts);
-
       setPosts(eventPosts);
     };
 
+    console.log("posts fetched");
     fetchPosts();
   }, []);
 
+  // to fetch student data
   useEffect(() => {
     const fetchStudentData = async () => {
       const { studentsData } = await request(
@@ -64,14 +64,14 @@ const Section = (props: Props) => {
     `
       );
 
-      console.log(studentsData);
-
+      console.log("student data fetched");
       setStudents(studentsData);
     };
 
     fetchStudentData();
   }, []);
 
+  // to fetch facluty data
   useEffect(() => {
     const fetchFacultyData = async () => {
       const { facultiesData } = await request(
@@ -99,27 +99,28 @@ const Section = (props: Props) => {
     };
   }, []);
 
+  // to fetch clubs data
   useEffect(() => {
     const fetchClubsData = async () => {
       const { clubsData } = await request(
         "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
-        `
-        {
+        `{ 
           clubsData{
             clubName
             clubAim
+            clubsSlug
+            clubsDescription{
+              text
+            }
           }
-        }
-
-    `
+        }`
       );
 
-      console.log(clubsData);
+      console.log("clubs data fetched");
 
-      setFaculty(clubsData);
-
-      fetchClubsData();
+      setClubs(clubsData);
     };
+    fetchClubsData();
   }, []);
 
   let Section;
@@ -142,7 +143,7 @@ const Section = (props: Props) => {
       break;
   }
 
-  return <div className="">{Section}</div>;
+  return <div className="flex p-5 justify-center">{Section}</div>;
 };
 
 export default Section;

@@ -1,19 +1,20 @@
-// import classes from "./Footer.module.css";
 const Footer = () => {
   return (
-    <div style={{"backgroundColor":"#162839"}} className=" flex flex-col justify-center items-center text-white mt-12  ">
+    <div
+      style={{ backgroundColor: "#162839" }}
+      className=" flex flex-col justify-center items-center text-white mt-12  "
+    >
       <div className="w-11/12 p-12 flex justify-center flex-col xl:flex-row md:w-8/12 ">
-        
-          <div className="flex flex-col p-4">
-            <h3 className="text-2xl mb-4 text-cyan-300 ">OUR VISION</h3>
-            <p className="">
-              Fostering the engagement of students in co-curricular and
-              extracurricular activities, and to inculcate in them the urge to
-              analyse, explore, build and project innovation as a community
-              comprising members from varied backgrounds
-            </p>
-          </div>
-          {/* <form className="">
+        <div className="flex flex-col p-4">
+          <h3 className="text-2xl mb-4 text-cyan-300 ">OUR VISION</h3>
+          <p className="">
+            Fostering the engagement of students in co-curricular and
+            extracurricular activities, and to inculcate in them the urge to
+            analyse, explore, build and project innovation as a community
+            comprising members from varied backgrounds
+          </p>
+        </div>
+        {/* <form className="">
             <input
               className=""
               type="text"
@@ -23,7 +24,7 @@ const Footer = () => {
               {">"}
             </button>
           </form> */}
-      
+
         <div className="flex justify-center flex-col md:flex-row ">
           <div className="p-4">
             <h3 className="text-2xl mb-3 text-cyan-300">ABOUT US</h3>
@@ -54,7 +55,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
         </div>
       </div>
       <hr className="border-1 border-gray-400 w-full" />

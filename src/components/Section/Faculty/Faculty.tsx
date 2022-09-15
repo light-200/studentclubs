@@ -1,5 +1,3 @@
-// import { useEffect, useState } from "react";
-// import classes from "./Faculty.module.css";
 import Namecard from "../../Namecard/Namecard";
 
 interface Props {
@@ -8,15 +6,9 @@ interface Props {
 
 const Faculty = ({ faculty }: Props) => {
   return (
-    <div className="">
+    <div className="grid grid-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 w-screen">
       {faculty.map((s: any, i) => {
-        return (
-          <Namecard
-            
-            profileImage={s.profileImage}
-            name={s.name}
-          />
-        );
+        return <Namecard profileImage={s.profileImage} name={s.name} />;
       })}
     </div>
   );

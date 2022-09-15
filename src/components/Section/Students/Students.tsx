@@ -6,21 +6,19 @@ interface Props {
 }
 const Student = ({ students }: Props) => {
   return (
-    <div className="flex">
-      <div className="grid  grid-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-        {students.map((s: Students, i) => {
-          return (
-            <Namecard
-              title={s.title}
-              key={i}
-              branch={s.branch}
-              session={s.session}
-              profileImage={s.profileImage}
-              name={s.name}
-            />
-          );
-        })}
-      </div>
+    <div className="grid sm:grid-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 w-full">
+      {students.map((s: Students, i) => {
+        return (
+          <Namecard
+            title={s.title}
+            key={i}
+            branch={s.branch}
+            session={s.session}
+            profileImage={s.profileImage}
+            name={s.name}
+          />
+        );
+      })}
     </div>
   );
 };
