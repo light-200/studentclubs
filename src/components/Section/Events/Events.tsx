@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import Post from "../../Post/Post";
-import classes from "./Events.module.css";
 import Posts from "../../../types/posts";
 
 interface Props {
@@ -9,7 +7,7 @@ interface Props {
 
 const Events = ({ posts }: Props) => {
   return (
-    <div className={classes.Events}>
+    <div className="grid sm:grid-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full">
       {posts.map((post: Posts, i) => {
         return (
           <Post

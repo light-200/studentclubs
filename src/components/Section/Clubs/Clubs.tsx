@@ -1,21 +1,20 @@
-import { useState, useEffect } from "react";
 import Post from "../../Post/Post";
-import classes from "./Clubs.module.css";
 
 interface Props {
   clubs: Array<any>;
 }
+
 const Clubs = ({ clubs }: Props) => {
+  console.log(clubs);
   return (
-    <div className={classes.Events}>
-      {clubs.map((c: any, i) => {
+    <div className="grid grid-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 w-full">
+      {clubs.map((club: any, i) => {
         return (
           <Post
-            key={c + i}
-            description={c}
-            image={c}
-            coverImages={c}
-            title={c}
+            key={i}
+            description={club.clubsDescription.text}
+            title={club.clubName}
+            slug={club.clubsSlug}
           />
         );
       })}

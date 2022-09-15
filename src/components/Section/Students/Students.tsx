@@ -1,21 +1,20 @@
-import { useState, useEffect } from "react";
-import classes from "./Students.module.css";
 import Namecard from "../../Namecard/Namecard";
+import Students from "../../../types/students";
 
 interface Props {
-  students: Array<any>;
+  students: Array<Students>;
 }
 const Student = ({ students }: Props) => {
   return (
-    <div className={classes.Students}>
-      {students.map((s: any, i) => {
+    <div className="grid sm:grid-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 w-full">
+      {students.map((s: Students, i) => {
         return (
           <Namecard
             title={s.title}
-            key={s.name + i}
+            key={i}
             branch={s.branch}
-            batch={s.session}
-            image={s.profileImage}
+            session={s.session}
+            profileImage={s.profileImage}
             name={s.name}
           />
         );
