@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Params, useParams } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import request from "graphql-request";
+import { request } from "graphql-request";
 import Posts from "../../types/posts";
 import Navbar from "../../components/Navigation/Navbar";
 
