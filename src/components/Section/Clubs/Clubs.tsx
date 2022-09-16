@@ -12,9 +12,9 @@ const Clubs = ({ clubs }: Props) => {
         return (
           <Post
             key={i}
-            description={club.clubsDescription.text}
-            title={club.clubName}
-            slug={club.clubsSlug}
+            description={club.description}
+            title={club.title}
+            slug={club.slug}
           />
         );
       })}

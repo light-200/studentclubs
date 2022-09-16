@@ -106,11 +106,11 @@ const Section = (props: Props) => {
         "https://api-ap-south-1.hygraph.com/v2/cl7kbi73z08wj01um1ch27f5e/master",
         `{ 
           clubsData{
-            clubName
-            clubAim
-            clubsSlug
-            clubsDescription{
-              text
+            title
+            description
+            slug
+            content{
+              html
             }
           }
         }`

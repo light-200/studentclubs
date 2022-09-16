@@ -1,7 +1,12 @@
 import Posts from "../../types/posts";
 import { Link } from "react-router-dom";
 
-const Post = (props: Posts) => {
+interface props {
+  post: Posts;
+  parent: string;
+}
+
+const Post = (props) => {
   return (
     <div className="mt-4 w-full">
       <div className="w-full relative shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all duration-300 overflow-hidden rounded-sm">
