@@ -25,7 +25,7 @@ const Navbar = () => {
             An Autonomous Institute Of Government Of Uttarakhand
           </p>
         </div>
-        <div>
+        <div className="pd-2 hidden sm:block">
           <img className="w-8 m-2 md:w-110" src={facebook} alt="" />
           <img className="w-8 m-2 md:w-110" src={instagram} alt="" />
         </div>

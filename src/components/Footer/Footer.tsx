@@ -4,7 +4,7 @@ const Footer = () => {
       style={{ backgroundColor: "#162839" }}
       className=" flex flex-col justify-center items-center text-white mt-12  "
     >
-      <div className="w-11/12 p-12 flex justify-center flex-col xl:flex-row md:w-8/12 ">
+      <div className="w-11/12 p-5 wd:p-12 flex justify-center flex-col xl:flex-row md:w-[90vw] max-w-5xl">
         <div className="flex flex-col p-4">
           <h3 className="text-2xl mb-4 text-cyan-300 ">OUR VISION</h3>
           <p className="">
@@ -14,16 +14,6 @@ const Footer = () => {
             comprising members from varied backgrounds
           </p>
         </div>
-        {/* <form className="">
-            <input
-              className=""
-              type="text"
-              placeholder="Email Address"
-            />
-            <button className="" type="submit">
-              {">"}
-            </button>
-          </form> */}
 
         <div className="flex justify-center flex-col md:flex-row ">
           <div className="p-4">

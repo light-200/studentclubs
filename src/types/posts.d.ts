@@ -4,6 +4,7 @@ interface Posts {
   image?: string;
   coverImages?: any;
   slug: string;
+  parent: string;
   content?: { html?: string; text?: string };
 }
 

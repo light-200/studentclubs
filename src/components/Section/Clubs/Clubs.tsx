@@ -1,4 +1,4 @@
-import Post from "../../Post/Post";
+import Post from "../Post/Post";
 
 interface Props {
   clubs: Array<any>;
@@ -11,6 +11,7 @@ const Clubs = ({ clubs }: Props) => {
       {clubs.map((club: any, i) => {
         return (
           <Post
+            parent="Club"
             key={i}
             description={club.description}
             title={club.title}

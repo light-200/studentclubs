@@ -1,4 +1,4 @@
-import Post from "../../Post/Post";
+import Post from "../Post/Post";
 import Posts from "../../../types/posts";
 
 interface Props {
@@ -11,6 +11,7 @@ const Events = ({ posts }: Props) => {
       {posts.map((post: Posts, i) => {
         return (
           <Post
+            parent="Event"
             description={post.description}
             title={post.title}
             image={post.image}
