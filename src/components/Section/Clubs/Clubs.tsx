@@ -1,4 +1,4 @@
-import Post from "../Post/Post";
+import Post from "../../Post/Post";
 
 interface Props {
   clubs: Array<any>;

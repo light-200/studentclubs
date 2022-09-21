@@ -1,4 +1,4 @@
-import Posts from "../../../types/posts";
+import Posts from "../../types/posts";
 import { Link } from "react-router-dom";
 
 const Post = (props: Posts) => {
@@ -14,9 +14,9 @@ const Post = (props: Posts) => {
             />
           </div>
         )}
-        <div className="text-lg p-4 h-64">
+        <div className="text-lg p-4 h-52">
           <h1 className="text-xl font-bold">{props.title}</h1>
-          <p className="mt-1 text-ellipsis line-clamp-2">{props.description}</p>
+          <p className="mt-1 text-ellipsis line-clamp-3">{props.description}</p>
           <Link to={`${props.parent}/${props.slug}`}>
             <div className="cursor-pointer  bg-cyan-500 w-28 text-gray-100 rounded-sm p-2 hover:bg-cyan-900 absolute bottom-3">
               Read More
