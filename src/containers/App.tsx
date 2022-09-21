@@ -17,12 +17,10 @@ function App() {
   return (
     <div className="relative">
       <Navbar />
-      <div className="absolute z-10 w-full">
-        <section className="flex justify-center mt-48 xl:mt-96">
-          <h1 className="font text-2xl md:text-4xl xl:text-6xl font-bold text-white drop-shadow-xl shadow-neutral-900">
-            Student Activities Cell
-          </h1>
-        </section>
+      <div className="absolute z-10 w-full h-screen grid place-content-center">
+        <h1 className="font text-2xl md:text-4xl xl:text-6xl font-bold text-white drop-shadow-xl shadow-neutral-900">
+          Student Activities Cell
+        </h1>
       </div>
       <div className="h-screen relative grid place-items-center overflow-hidden">
         <img
